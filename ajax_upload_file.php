@@ -8,9 +8,9 @@ use fileuploader\server\FileUploader;
 
 session_start();
 
-include('../../server/class.fileuploader.php');
+include('./server/class.fileuploader.php');
 
-include_once('../../secure_upload.php');
+include_once('./secure_upload.php');
 
 if (!is_writable($upload_config['upload_dir'])) {
     exit('UPLOAD ERROR: ' . $upload_config['upload_dir'] . ' IS NOT WRITABLE - Try to increase your CHMOD and double-check that your folder exists');
